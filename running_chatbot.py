@@ -12,6 +12,7 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 subprocess.Popen(
-    ["cmd", "/k", f'cd /d "{script_dir}" && python chatbot.py'],
+    ["cmd", "/k", "python chatbot.py"],
+    cwd=script_dir,
     creationflags=subprocess.CREATE_NEW_CONSOLE,
 )
