@@ -28,11 +28,15 @@ pip install pandas
 
 ## Running the Chatbot
 
+> **To start the chatbot, open `running_chatbot.py`.**
+
 ```bash
-python chatbot.py
+python running_chatbot.py
 ```
 
-You will see a prompt where you can type your question:
+This will automatically open a new terminal window with the chatbot ready to use. You do not need to open a terminal manually.
+
+Once the terminal opens, you will see:
 
 ```
 =======================================================
@@ -44,7 +48,7 @@ Type 'help' to list queries, or 'quit' to exit.
 You:
 ```
 
-Type `help` to see all supported queries, or `quit` to exit.
+Type your question and press Enter. Type `help` to see all supported queries, or `quit` to exit.
 
 ---
 
@@ -160,6 +164,7 @@ chatbot-project/
 │   └── workflows/
 │       └── test.yml
 ├── chatbot.py          # Chatbot logic and CLI
+├── running_chatbot.py  # Opens a new terminal and launches the chatbot
 ├── test_chatbot.py     # 30-test suite
 ├── Untitled-1.ipynb    # Data analysis notebook
 └── README.md
